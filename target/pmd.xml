@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2020-11-21T15:56:46.756">
+<error filename="/home/christina/db_lab_4/src/main/java/com/iot/view/View.java" msg="PMDException: Error while parsing /home/christina/db_lab_4/src/main/java/com/iot/view/View.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while parsing /home/christina/db_lab_4/src/main/java/com/iot/view/View.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:110)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:89)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:51)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:78)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+Caused by: net.sourceforge.pmd.lang.java.ast.ParseException: Line 25, Column 26: Cannot use method references when running in JDK inferior to 1.8 mode!
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.throwParseException(JavaParser.java:28)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.checkForBadMethodReferenceUsage(JavaParser.java:116)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.MethodReference(JavaParser.java:3782)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.MemberSelector(JavaParser.java:3748)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PrimarySuffix(JavaParser.java:4199)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PrimaryExpression(JavaParser.java:3706)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PostfixExpression(JavaParser.java:3525)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.UnaryExpressionNotPlusMinus(JavaParser.java:3483)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.UnaryExpression(JavaParser.java:3360)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.MultiplicativeExpression(JavaParser.java:3275)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.AdditiveExpression(JavaParser.java:3222)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ShiftExpression(JavaParser.java:3165)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.RelationalExpression(JavaParser.java:3104)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.InstanceOfExpression(JavaParser.java:3068)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.EqualityExpression(JavaParser.java:3015)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.AndExpression(JavaParser.java:2975)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ExclusiveOrExpression(JavaParser.java:2935)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.InclusiveOrExpression(JavaParser.java:2895)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalAndExpression(JavaParser.java:2855)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalOrExpression(JavaParser.java:2815)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ConditionalExpression(JavaParser.java:2777)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.Expression(JavaParser.java:2634)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ArgumentList(JavaParser.java:4440)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.Arguments(JavaParser.java:4394)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PrimarySuffix(JavaParser.java:4220)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PrimaryExpression(JavaParser.java:3706)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.PostfixExpression(JavaParser.java:3525)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.StatementExpression(JavaParser.java:5022)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.Statement(JavaParser.java:4666)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.BlockStatement(JavaParser.java:4825)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ConstructorDeclaration(JavaParser.java:1877)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBodyDeclaration(JavaParser.java:1292)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceBody(JavaParser.java:1251)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.ClassOrInterfaceDeclaration(JavaParser.java:707)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.TypeDeclaration(JavaParser.java:618)
+	at net.sourceforge.pmd.lang.java.ast.JavaParser.CompilationUnit(JavaParser.java:352)
+	at net.sourceforge.pmd.lang.java.AbstractJavaParser.parse(AbstractJavaParser.java:62)
+	at net.sourceforge.pmd.SourceCodeProcessor.parse(SourceCodeProcessor.java:121)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:185)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:107)
+	... 10 more
+]]>
+</error>
+</pmd>
