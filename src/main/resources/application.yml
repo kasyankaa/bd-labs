@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:mysql://localhost:3306/third_lab?serverTimezone=UTC}
+    username: ${JDBC_DATABASE_USERNAME:kasyanka}
+    password: ${JDBC_DATABASE_PASSWORD:Relax2003}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  server:
+    port:8090
